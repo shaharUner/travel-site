@@ -1,8 +1,13 @@
+/* do not edit _sparite.css its generated automaticly by gulp in gulp/tasks/template/sprite.js  */
 {{#shapes}}
+{{#first}}
+.icon{
+  background-image: url('/assets/images/sprites/{{{sprite}}}');
+}
+{{/first}}
 .icon--{{base}}{
   width: {{width.outer}}px ;
   height:{{height.outer}}px ;
-  background-image: url('/temp/sprite/css/{{{sprite}}}');
   background-position:{{position.relative.xy}};
 }
 {{/shapes}}
