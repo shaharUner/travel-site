@@ -593,11 +593,38 @@ padding: 4.5rem 0
 .row--gutters-small{
   margin-right: -45px;
 }  
-.row__b-margin-until-medium{
-  margin: 1rem;
-}  
+@media (min-width: 800px) {
+  .row__b-margin-until-medium{
+    margin: 1rem;
+  }
+  .row__b-no-margin-until-medium{
+    margin: 0;
+  }
+  .row__medium-4{
+    float: left;
+    width: 33.33%;
+  }
+    .row__medium-4--larger{
+      width: 37%;
+    }
+  .row__medium-6{
+    float: left;
+    width: 50%;
+  }
+  .row__medium-8{
+    float: left;
+    width: 66.66%;
+  }
+
+    .row__medium-8--smaller{
+      width: 63%;
+    }
+  }  
 @media (min-width: 1010px) {
-  .row__b-margin-until-Large{
+  .row__b-margin-until-large{
+    margin: 1rem;
+  }
+  .row__b-no-margin-until-Large{
     margin: 0;
   }
   .row__Large-4{
