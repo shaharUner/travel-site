@@ -889,11 +889,11 @@ width: 100%;
 transition: background-color .5s ease-out;
 }  
 .site-header--is-expanded{
-  background-color: rgba(#2f5572 , 0.55);
+  background-color: rgba(47,85,114, 0.55);
 }  
 @media (min-width: 800px) {  
 .site-header{
-  background-color: rgba(#2f5572, 0.3)
+  background-color: rgba(47,85,114, 0.3)
 }
   }  
 .site-header__logo{
@@ -1059,7 +1059,7 @@ transition: background-color .5s ease-out;
   display: block;
   padding:5px 8px;
   font-size: .8rem;
-  background-color: rgba(#2f5572 ,  .5);
+  background-color: rgba(47,85,114,  .5);
 }  
 @media (min-width: 800px) {  
 .primary-nav a{
@@ -1072,4 +1072,16 @@ transition: background-color .5s ease-out;
 .primary-nav--pull-right{
 float: right
 }
+  }  
+.reveal-item{
+  opacity:0;
+  -webkit-transition: all 1.5s ease-out;
+  transition: all 1.5s ease-out;
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+}  
+.reveal-item--is-visible{
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
