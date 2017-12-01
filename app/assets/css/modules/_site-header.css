@@ -29,7 +29,7 @@ transition: background-color .5s ease-out;
     transform: translateX(0);
 
     .site-header--dark & {
-      transform: scale(.57);
+      transform: scale(.55);
     }
   }
 }
